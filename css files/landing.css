@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
+
+
+body{
+    background-image: url(../images/new\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    font-family: 'Noto Naskh Arabic', serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    transition: width none;
+}
+
+:root{
+    --black: rgb(58, 61, 59);
+    --light-color: rgb(130, 135, 132);
+    --light-gray: rgb(200, 207, 203);
+    --light-purple: rgb(196, 155, 212);
+    --dark-purple: rgb(51, 13, 37);
+    --text-shadow: 0.2rem 0.2rem 1rem;
+    --box-shadow:-1px 3px 45px 2px ;
+}
+
+section{
+    margin: 7rem 0 10rem 0;
+}
+
+.btn{
+    color: #fff;
+    border: 0.02rem solid var(--light-purple);
+    border-radius: 3rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.btn:hover{
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+}
+
+/* header 1 styles starts */
+.header{
+    margin: 0;
+}
+
+.header-1{
+    background-color: rgb(129, 75, 100);
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.ad-text{
+    color: #fff;
+}
+/* header 1 styles ends  */
+
+/* header 2 styles starts */
+.header-2{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+    align-items: center;
+}
+
+.logo-in-header{
+    width: 5rem;
+}
+
+.menu{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-opt{
+    font-size: 1.5rem;
+    color: var(--dark-purple);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.menu-opt:hover{
+    color: #fff;
+    background-color: var(--light-purple);
+}
+
+.header-forms{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search-form{
+    border: 0.002rem solid var(--light-purple);
+    padding:0.2rem 1rem 0.2rem 1rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.fa-magnifying-glass{
+    cursor: pointer;
+}
+
+.fa-magnifying-glass:hover{
+    color: var(--light-purple);
+}
+
+.login-btn{
+    color: var(--dark-purple);
+    padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+.login-btn:hover{
+    color: #fff;
+}
+/* header 2 styles ends  */
+
+/* home section styles starts */
+.home{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.home-banner-img{
+    width: 40rem;
+}
+
+.home-banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-banner-title{
+    font-size: 2rem;
+}
+
+.home-banner-txt{
+    text-align: center;
+    line-height: 2rem;
+    width: 25rem;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.home-about-btn{
+    border: 0.02rem solid orangered;
+    background-color: orangered;
+    border-radius: 3rem;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.home-about-btn:hover{
+    font-size: 1.6rem;
+}
+
+.home-roadmap-btn{
+    border: 0.02rem solid rgb(61, 65, 84);
+    background-color: rgb(61, 65, 84);
+    border-radius: 3rem;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.home-roadmap-btn:hover{
+    font-size: 1.6rem;
+}
+/* home section styles ends */
+
+/* courses section styles starts */
+.courses-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black) ;
+    text-shadow:var(--text-shadow) rgb(22, 90, 5);
+}
+
+.course-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: var(--box-shadow) rgb(22, 90, 5);
+    width: 20%;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    margin: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-card-img{
+    width: 15rem;
+}
+
+.course-category{
+    font-size: 3rem;
+    color: rgb(22, 90, 5);
+    text-align: center;
+}
+
+.course-description{
+    text-align: center;
+    color: var(--black);
+}
+
+.number-of-course{
+    text-decoration: underline;
+}
